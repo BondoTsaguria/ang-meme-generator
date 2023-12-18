@@ -3,7 +3,7 @@
     <div class="row">
       <!-- left column -->
       <div class="col-md-6">
-        <div class="card">
+        <div class="card drop-shadow">
           <div class="card-body">
             <form>
               <div class="form-group">
@@ -18,12 +18,38 @@
                 <label for="">Bottom Text</label>
                 <input type="text" class="form-control" name="bottomText" />
               </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Text Color</label>
+                    <color-chrome></color-chrome>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Background Color</label>
+                    <color-chrome></color-chrome>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-outline-primary btn-block mt-5">
+                Download
+              </button>
             </form>
           </div>
         </div>
       </div>
       <!-- right column -->
-      <div class="col-md-6"></div>
+      <div class="col-md-6">
+        <canvas
+          class="drop-shadow"
+          #memeCanvas
+          width="550"
+          height="800"
+          style="background-color: #f9f9fb"
+        ></canvas>
+      </div>
     </div>
   </div>
 </div>
