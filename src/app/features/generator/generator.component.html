@@ -35,22 +35,29 @@
                   (keyup)="drawText()"
                 />
               </div>
-              <div class="row">
+              <div class="row mt-3">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="">Text Color</label>
-                    <color-chrome></color-chrome>
+                    <label class="mb-1">Text Color</label>
+                    <color-chrome
+                      (onChangeComplete)="canvasTextColor($event)"
+                    ></color-chrome>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="">Background Color</label>
-                    <color-chrome></color-chrome>
+                    <label class="mb-1">Background Color</label>
+                    <color-chrome
+                      (onChangeComplete)="canvasbgColor($event)"
+                    ></color-chrome>
                   </div>
                 </div>
               </div>
 
-              <button class="btn btn-outline-primary btn-block mt-5">
+              <button
+                class="btn btn-outline-primary btn-block mt-5"
+                (click)="downloadImg()"
+              >
                 Download
               </button>
             </form>
