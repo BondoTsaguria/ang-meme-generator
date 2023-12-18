@@ -17,11 +17,23 @@
               </div>
               <div class="form-group">
                 <label for="">Top Text</label>
-                <input type="text" class="form-control" name="topText" />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="topText"
+                  [(ngModel)]="topText"
+                  (keyup)="drawText()"
+                />
               </div>
               <div class="form-group">
                 <label for="">Bottom Text</label>
-                <input type="text" class="form-control" name="bottomText" />
+                <input
+                  type="text"
+                  class="form-control"
+                  name="bottomText"
+                  [(ngModel)]="bottomText"
+                  (keyup)="drawText()"
+                />
               </div>
               <div class="row">
                 <div class="col-md-6">
